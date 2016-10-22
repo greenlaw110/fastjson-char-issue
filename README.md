@@ -16,22 +16,6 @@ public class ModelWithCharArray {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ModelWithCharArray that = (ModelWithCharArray) o;
-
-        return Arrays.equals(v, that.v);
-
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(v);
-    }
-
-    @Override
     public String toString() {
         return Arrays.toString(v);
     }
